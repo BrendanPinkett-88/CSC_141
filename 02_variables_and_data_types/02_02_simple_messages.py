@@ -1,10 +1,6 @@
-'''
-
-
-'The thing is my favorite character from the fantastic four because how strong he is"
-"I told my friend about the fantastic four and he said he would like to watch it with me"
-"I showed my friend why thing is my favorite character" 
-
-
-
-'''
+# Brendan Pinkett
+# Chapter 2
+artist ="I like the living tombstone"
+print(artist)
+artist = "but I like listening to queen"
+print(artist)
