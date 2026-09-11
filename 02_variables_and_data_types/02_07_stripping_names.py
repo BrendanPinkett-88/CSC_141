@@ -1,4 +1,4 @@
-name = "     Mark spector"
+name = "Mark Spector"
 print(name)
 print(name.lstrip())
 print(name.rstrip())
