@@ -1,4 +1,4 @@
-
+# names
 names = ['Richard', 'Jeremiah', 'Rashod', 'Dahvay', 'Sequoia']
 
 
