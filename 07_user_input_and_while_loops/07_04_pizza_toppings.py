@@ -1,9 +1,9 @@
 #pizza toppings
 
 while True:
-    topping = input("Enter a pizza topping (or 'quit' to stop): ")
-
-    if topping == "quit":
+    topping = input("Plain Cheese")
+    if topping == 'quit':
+        pizzas = False
         break
-
-    print(f"I'll add {topping} to your pizza.")
+    else:
+        print (f"I'll add {topping} to your pizza.")
