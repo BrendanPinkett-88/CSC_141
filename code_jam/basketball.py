@@ -50,15 +50,15 @@ while running:
 screen = pygame.display.set_mode((800, 600))
 clock = pygame.time.Clock()
 
-# Load image
+
 image = pygame.image.load("code_jam/media/basketball.png").convert()
 
-# Rotate by 180 degrees
+
 rotated_image = pygame.transform.rotate(image, 180)
 
-# Create a surface to draw on
+
 screen.fill((0, 0, 0))
-screen.blit(rotated_image, (200, 200))  # position on screen
+screen.blit(rotated_image, (200, 200))
 pygame.display.flip()
 
 while True:
@@ -67,3 +67,33 @@ while True:
             pygame.quit()
             exit()
     clock.tick(60)
+
+    keys = pygame.key.get_pressed()
+    if keys[pygame.K_LEFT]:
+        rotated_image = pygame.transform.rotate(image, 90)
+        screen.fill((0, 0, 0))
+        screen.blit(rotated_image, (200, 200))
+        pygame.display.flip()
+
+    keys = pygame.key.get_pressed()
+    if keys[pygame.K_RIGHT]:
+        rotated_image = pygame.transform.rotate(image, -90)
+        screen.fill((0, 0, 0))
+        screen.blit(rotated_image, (200, 200))
+        pygame.display.flip()    
+
+    keys = pygame.key.get_pressed()
+    if keys[pygame.K_UP]:
+        rotated_image = pygame.transform.rotate(image, 180)
+        screen.fill((0, 0, 0))
+        screen.blit(rotated_image, (200, 200))
+        pygame.display.flip()
+
+    keys = pygame.key.get_pressed()
+    if keys[pygame.K_DOWN]:
+        rotated_image = pygame.transform.rotate(image, 0)
+        screen.fill((0, 0, 0))
+        screen.blit(rotated_image, (200, 200))
+        pygame.display.flip()        
+    
+        
