@@ -1,5 +1,6 @@
 #message
+
 def display_message():
-    print("Hello, this is a simple function!")
+    print('I am learning about power in python')
 
 display_message()
