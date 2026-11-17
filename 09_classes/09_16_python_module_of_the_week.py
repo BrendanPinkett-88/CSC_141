@@ -21,6 +21,5 @@ for ip in ADDRESSES:
     print('      integer:', int(addr))
     print()
 
-# python3 ipaddress_addresses.py
 
 ipaddress.IPv4Address('10.9.0.6')
