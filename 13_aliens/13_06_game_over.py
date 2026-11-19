@@ -99,9 +99,12 @@ def show_stats():
         f"Aliens Hitting Ship: {alien_ship_hits}",
         True, WHITE
     )
-
+    point_text = font.render(
+        f"shooting aliens: {len(aliens)}", True, WHITE
+    )
     screen.blit(ship_text, (10, 10))
     screen.blit(alien_text, (10, 40))
+    screen.blit(point_text, (10, 70))
 
 
 
@@ -127,7 +130,7 @@ while True:
             elif event.key == pygame.K_DOWN:
                 ship.moving_down = False
 
-    
+     
     ship.update()
     bullets.update()
     aliens.update()
